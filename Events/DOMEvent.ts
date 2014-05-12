@@ -1,7 +1,7 @@
 /// <reference path="Event.ts" />
 /// <reference path="IDOMSender.ts" />
 /// <reference path="IDOMEventArgs.ts" />
-/// <reference path="../../../lib/jquery.d.ts" />
+/// <reference path="../lib/jquery.d.ts" />
 
 /**
  * @namespace   PushUp.Framework.Events

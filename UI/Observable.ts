@@ -1,4 +1,4 @@
-/// <reference path="../../../lib/knockout.d.ts" />
+/// <reference path="../lib/knockout.d.ts" />
 
 module PushUp.Framework.UI {
 

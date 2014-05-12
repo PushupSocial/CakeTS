@@ -4,7 +4,7 @@
 /// <reference path="ProxyStatus.ts" />
 
 /// <reference path="ProxyEndpoint.ts" />
-/// <reference path="../../../../../bower_components/Typertext/build/typertext.d.ts" />
+/// <reference path="../../lib/typertext.d.ts" />
 
 /// <reference path="../../Events/Event.ts" />
 

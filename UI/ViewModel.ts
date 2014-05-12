@@ -1,7 +1,7 @@
 /// <reference path="../Events/Event.ts" />
 /// <reference path="../Routing/History.ts" />
-/// <reference path="../../../lib/knockout.d.ts" />
-/// <reference path="../../../lib/jquery.d.ts" />
+/// <reference path="../lib/knockout.d.ts" />
+/// <reference path="../lib/jquery.d.ts" />
 
 module PushUp.Framework.UI {
     import Events = PushUp.Framework.Events;

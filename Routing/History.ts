@@ -1,6 +1,6 @@
 /**
  */
-/// <reference path="../../../lib/jquery.d.ts" />
+/// <reference path="../lib/jquery.d.ts" />
 /// <reference path="HistoryItem.ts" />
 
 module PushUp.Framework.Routing {

@@ -1,21 +1,22 @@
-/// <reference path="../../../lib/jquery.d.ts" />
+/// <reference path="../lib/jquery.d.ts" />
 /// <reference path="../Events/DOMEvent.ts" />
-/// <reference path="../../Client/Router.ts" />
+/// <reference path="../Routing/IRouter.ts" />
+/// <reference path="../Routing/HistoryItem.ts" />
 
 module PushUp.Framework.UI {
     import IDOMSender = PushUp.Framework.Events.IDOMSender;
-    import Router = PushUp.Client.Router;
+    import IRouter = PushUp.Framework.Routing.IRouter;
     import HistoryItem = PushUp.Framework.Routing.HistoryItem;
 
     export class Component implements IDOMSender {
         private _element: JQuery;
-        private _router: PushUp.Client.Router;
+        private _router: IRouter;
 
-        constructor(router: PushUp.Client.Router) {
+        constructor(router: IRouter) {
             this._router = router;
         }
 
-        public GetRouter(): PushUp.Client.Router {
+        public GetRouter(): IRouter {
             return this._router;
         }
 
