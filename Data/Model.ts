@@ -1,5 +1,5 @@
-/// <reference path="../../../lib/knockout.d.ts" />
-/// <reference path="../../Framework/Utils/StringExtensions.ts" />
+/// <reference path="../lib/knockout.d.ts" />
+/// <reference path="../Utils/StringExtensions.ts" />
 
 module PushUp.Framework.Data {
     import StringExtensions = PushUp.Framework.Utils.StringExtensions;
