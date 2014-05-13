@@ -49,7 +49,7 @@ module CakeTS.UI {
         }
 
         public Destroy():void {
-
+            ko.cleanNode(this._rootElement[0]);
         }
     }
 }
