@@ -1,4 +1,4 @@
-﻿module PushUp.Framework.Routing {
+﻿module CakeTS.Routing {
 
     export class MessageException {
 

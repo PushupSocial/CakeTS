@@ -1,5 +1,5 @@
 ﻿/// <reference path="../lib/jquery.d.ts" />
-module PushUp.Framework.Events {
+module CakeTS.Events {
     export interface IDOMEventArgs {
         event: any;
         element: JQuery;

@@ -1,7 +1,7 @@
 /// <reference path="../Events/Event.ts" />
 
-module PushUp.Framework.UI {
-    import Events = PushUp.Framework.Events;
+module CakeTS.UI {
+    import Events = CakeTS.Events;
 
     export class ScrollWatcher  {
         private element: HTMLElement;

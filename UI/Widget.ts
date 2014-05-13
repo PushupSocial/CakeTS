@@ -1,6 +1,6 @@
 /// <reference path="ViewModel.ts" />
 
-module PushUp.Framework.UI {
+module CakeTS.UI {
     export class Widget {
         private _viewModel: ViewModel;
 

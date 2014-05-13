@@ -1,10 +1,10 @@
 /// <reference path="IEventHandler.ts" />
 
 /**
- * @namespace   PushUp.Framework.Events
+ * @namespace   CakeTS.Events
  * @module      Events
  */
-module PushUp.Framework.Events {
+module CakeTS.Events {
     export class Event<T> {
         /**
          * Private array of events to fire

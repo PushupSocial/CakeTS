@@ -2,10 +2,10 @@
 /// <reference path="LogCategory.ts" />
 
 /**
- * @namespace   PushUp.Framework.Utils
+ * @namespace   CakeTS.Utils
  * @module      Utilities
  */
-module PushUp.Framework.Utils {
+module CakeTS.Utils {
     /**
      * The PushUp.Core.Logger class is the centralized class for handling
      * all application logging and debugging messages. You can set variable
@@ -26,8 +26,8 @@ module PushUp.Framework.Utils {
      * @constructor
      * @private
      *
-     * @uses        PushUp.Framework.Utils.LogLevel
-     * @uses        PushUp.Framework.Utils.LogCategory
+     * @uses        CakeTS.Utils.LogLevel
+     * @uses        CakeTS.Utils.LogCategory
      *
      * @author      Sean Templeton <sean@pushup.com>,
      *              Kegan Myers <kegan@pushup.com>

@@ -1,9 +1,9 @@
 /**
- * @namespace   PushUp.Framework.Data.Proxies
+ * @namespace   CakeTS.Data.Proxies
  * @module      Data
  * @submodule   ProxyEndPoint
  */
-module PushUp.Framework.Data.Proxies {
+module CakeTS.Data.Proxies {
     import HttpProtocol = Typertext.Http.HttpProtocol;
     export class ProxyEndpoint {
         /**

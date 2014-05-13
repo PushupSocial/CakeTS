@@ -1,4 +1,4 @@
-module PushUp.Framework.Utils {
+module CakeTS.Utils {
     export class UrlHandling {
         public static parseUrl(url:string) {
             var a = document.createElement("a");

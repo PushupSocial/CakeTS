@@ -1,3 +1,3 @@
-module PushUp.Framework.Routing {
+module CakeTS.Routing {
     export interface IRouter {}
 }

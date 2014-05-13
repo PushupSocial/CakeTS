@@ -1,4 +1,4 @@
-﻿module PushUp.Framework.Utils {
+﻿module CakeTS.Utils {
     export enum LogCategory {
         Loader,
         Component,

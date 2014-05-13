@@ -1,4 +1,4 @@
-module PushUp.Framework.Utils {
+module CakeTS.Utils {
     export class Storage {
         private static localStorageEnabled:boolean = (()=> {
             try {

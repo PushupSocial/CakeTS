@@ -3,10 +3,10 @@
 /// <reference path="../Routing/IRouter.ts" />
 /// <reference path="../Routing/HistoryItem.ts" />
 
-module PushUp.Framework.UI {
-    import IDOMSender = PushUp.Framework.Events.IDOMSender;
-    import IRouter = PushUp.Framework.Routing.IRouter;
-    import HistoryItem = PushUp.Framework.Routing.HistoryItem;
+module CakeTS.UI {
+    import IDOMSender = CakeTS.Events.IDOMSender;
+    import IRouter = CakeTS.Routing.IRouter;
+    import HistoryItem = CakeTS.Routing.HistoryItem;
 
     export class Component implements IDOMSender {
         private _element: JQuery;
