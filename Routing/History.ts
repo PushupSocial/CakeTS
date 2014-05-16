@@ -1,9 +1,9 @@
 /**
  */
-/// <reference path="../../../lib/jquery.d.ts" />
+/// <reference path="../lib/jquery.d.ts" />
 /// <reference path="HistoryItem.ts" />
 
-module PushUp.Framework.Routing {
+module CakeTS.Routing {
     export class History {
         private static _pastStates:HistoryItem[] = [];
         private static _maxPastStates:number = 20;

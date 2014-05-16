@@ -5,13 +5,13 @@
 
 
 /**
- * @namespace   PushUp.Framework.Data
+ * @namespace   CakeTS.Data
  * @module      Data
  */
-module PushUp.Framework.Data {
-    import Model = PushUp.Framework.Data.Model;
-    import IProxy = PushUp.Framework.Data.Proxies.IProxy;
-    import ProxyResponse = PushUp.Framework.Data.Proxies.ProxyResponse;
+module CakeTS.Data {
+    import Model = CakeTS.Data.Model;
+    import IProxy = CakeTS.Data.Proxies.IProxy;
+    import ProxyResponse = CakeTS.Data.Proxies.ProxyResponse;
 
     export class DataSource {
         private data:DataItem[];
@@ -30,11 +30,11 @@ module PushUp.Framework.Data {
          * @param       {Model}     modelInstance
          * @param       {DataItem[]}  prepopulatedData
          *
-         * @uses        PushUp.Framework.Data.Stores.IStorage
-         * @uses        PushUp.Framework.Data.Model
-         * @uses        PushUp.Framework.Data.DataItem
-         * @uses        PushUp.Framework.Data.Proxies.IProxy
-         * @uses        PushUp.Framework.Data.Proxies.ProxyResponse
+         * @uses        CakeTS.Data.Stores.IStorage
+         * @uses        CakeTS.Data.Model
+         * @uses        CakeTS.Data.DataItem
+         * @uses        CakeTS.Data.Proxies.IProxy
+         * @uses        CakeTS.Data.Proxies.ProxyResponse
          *
          * @author      Kegan Myers <kegan@pushup.com>
          * @version     0.2.1

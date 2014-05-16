@@ -4,10 +4,10 @@
 /// <reference path="../Utils/Logger.ts" />
 /// <reference path="../Utils/LogCategory.ts" />
 
-module PushUp.Framework.Routing {
-    import Events = PushUp.Framework.Events;
-    import Logger = PushUp.Framework.Utils.Logger;
-    import LogCategory = PushUp.Framework.Utils.LogCategory;
+module CakeTS.Routing {
+    import Events = CakeTS.Events;
+    import Logger = CakeTS.Utils.Logger;
+    import LogCategory = CakeTS.Utils.LogCategory;
 
     export class Messenger {
         private handlers: {

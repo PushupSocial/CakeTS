@@ -1,8 +1,8 @@
-/// <reference path="../../../lib/knockout.d.ts" />
-/// <reference path="../../Framework/Utils/StringExtensions.ts" />
+/// <reference path="../lib/knockout.d.ts" />
+/// <reference path="../Utils/StringExtensions.ts" />
 
-module PushUp.Framework.Data {
-    import StringExtensions = PushUp.Framework.Utils.StringExtensions;
+module CakeTS.Data {
+    import StringExtensions = CakeTS.Utils.StringExtensions;
 
     export class Model {
         private CreateObservable(data: any, defaultData: any): any {

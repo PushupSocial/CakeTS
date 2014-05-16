@@ -1,12 +1,12 @@
 /// <reference path="ProxyStatus.ts" />
 
 /**
- * @namespace   PushUp.Framework.Data.Proxies
+ * @namespace   CakeTS.Data.Proxies
  * @module      Data
  * @submodule   Proxies
  */
-module PushUp.Framework.Data.Proxies {
-    import ProxyStatus = PushUp.Framework.Data.Proxies.ProxyStatus;
+module CakeTS.Data.Proxies {
+    import ProxyStatus = CakeTS.Data.Proxies.ProxyStatus;
 
     export class ProxyResponse {
         /**
@@ -37,7 +37,7 @@ module PushUp.Framework.Data.Proxies {
          * @param       {ProxyStatus}   status
          * @param       {any}           data
          *
-         * @uses        PushUp.Framework.Data.Proxies.ProxyStatus
+         * @uses        CakeTS.Data.Proxies.ProxyStatus
          *
          * @author      Kegan Myers <kegan@pushup.com>
          * @version     0.1.1

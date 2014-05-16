@@ -1,4 +1,4 @@
-﻿module PushUp.Framework.Utils {
+﻿module CakeTS.Utils {
     /**
      * An enumeration of the possible LogLevels
      */

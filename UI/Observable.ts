@@ -1,6 +1,6 @@
-/// <reference path="../../../lib/knockout.d.ts" />
+/// <reference path="../lib/knockout.d.ts" />
 
-module PushUp.Framework.UI {
+module CakeTS.UI {
 
     export class Observable {
         constructor(data: any) {

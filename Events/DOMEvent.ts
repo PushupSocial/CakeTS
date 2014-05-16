@@ -1,14 +1,14 @@
 /// <reference path="Event.ts" />
 /// <reference path="IDOMSender.ts" />
 /// <reference path="IDOMEventArgs.ts" />
-/// <reference path="../../../lib/jquery.d.ts" />
+/// <reference path="../lib/jquery.d.ts" />
 
 /**
- * @namespace   PushUp.Framework.Events
+ * @namespace   CakeTS.Events
  * @module      Events
  */
-module PushUp.Framework.Events {
-    export class DOMEvent extends Event<IDOMEventArgs> {
+module CakeTS.Events {
+    export class DOMEvent extends CakeTS.Events.Event<IDOMEventArgs> {
         /**
          * DOM Event handler provides an interface to easily providing and listening
          * to DOM element events.

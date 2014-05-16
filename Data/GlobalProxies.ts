@@ -1,6 +1,6 @@
 /// <reference path="Proxies/PushUpAPI.ts" />
 
-module PushUp.Framework.Data {
+module CakeTS.Data {
     export class GlobalProxies {
         /**
          * @property    Pushup
@@ -8,6 +8,6 @@ module PushUp.Framework.Data {
          * @static
          * @type        {PushUpAPI}
          */
-        public static Pushup: PushUp.Framework.Data.Proxies.PushUpAPI;
+        public static Pushup: CakeTS.Data.Proxies.PushUpAPI;
     }
 }

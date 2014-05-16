@@ -1,4 +1,4 @@
-﻿module PushUp.Framework.Routing {
+﻿module CakeTS.Routing {
 
     export class HistoryItem {
 
@@ -46,7 +46,7 @@
          * Foo/bar:baz/any:argument/you:want/goes:here
          *
          * @param path
-         * @returns {PushUp.Framework.Routing.HistoryItem}
+         * @returns {CakeTS.Routing.HistoryItem}
          */
         public static FromString(path:string):HistoryItem {
             var pieces:string[] = path.split("/"), arguments:{

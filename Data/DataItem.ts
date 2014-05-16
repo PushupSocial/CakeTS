@@ -1,4 +1,4 @@
-module PushUp.Framework.Data {
+module CakeTS.Data {
     export interface DataItem {
         [index:string]:any;
     }

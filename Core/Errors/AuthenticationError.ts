@@ -1,5 +1,5 @@
 /// <reference path="../Error.ts" />
 
-module PushUp.Framework.Core.Errors {
+module CakeTS.Core.Errors {
     export class AuthenticationError extends Error {}
 }

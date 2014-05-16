@@ -4,7 +4,7 @@
 /// <reference path="ProxyStatus.ts" />
 
 /// <reference path="ProxyEndpoint.ts" />
-/// <reference path="../../../../../bower_components/Typertext/build/typertext.d.ts" />
+/// <reference path="../../lib/typertext.d.ts" />
 
 /// <reference path="../../Events/Event.ts" />
 
@@ -12,25 +12,25 @@
 /// <reference path="../../Core/Errors/AuthenticationError.ts" />
 
 /**
- * @namespace   PushUp.Framework.Data.Proxies
+ * @namespace   CakeTS.Data.Proxies
  * @module      Data
  * @submodule   Proxies
  */
-module PushUp.Framework.Data.Proxies {
-    import IProxy = PushUp.Framework.Data.Proxies.IProxy;
-    import ProxyResponse = PushUp.Framework.Data.Proxies.ProxyResponse;
-    import ProxyStatus = PushUp.Framework.Data.Proxies.ProxyStatus;
-    import ProxyEndpoint = PushUp.Framework.Data.Proxies.ProxyEndpoint;
+module CakeTS.Data.Proxies {
+    import IProxy = CakeTS.Data.Proxies.IProxy;
+    import ProxyResponse = CakeTS.Data.Proxies.ProxyResponse;
+    import ProxyStatus = CakeTS.Data.Proxies.ProxyStatus;
+    import ProxyEndpoint = CakeTS.Data.Proxies.ProxyEndpoint;
 
     import JsonRequest = Typertext.Json.JsonRequest;
     import HttpUrl = Typertext.Http.HttpUrl;
     import HttpProtocol = Typertext.Http.HttpProtocol;
     import HttpResponseStatus = Typertext.Http.HttpResponseStatus;
 
-    import Events = PushUp.Framework.Events;
+    import Events = CakeTS.Events;
 
-    import UnauthenticatedAccessError = PushUp.Framework.Core.Errors.UnauthenticatedAccessError;
-    import AuthenticationError = PushUp.Framework.Core.Errors.AuthenticationError;
+    import UnauthenticatedAccessError = CakeTS.Core.Errors.UnauthenticatedAccessError;
+    import AuthenticationError = CakeTS.Core.Errors.AuthenticationError;
 
     export class PushUpAPI implements IProxy {
         /**
@@ -78,9 +78,9 @@ module PushUp.Framework.Data.Proxies {
          * @param       {string}    accessToken
          * @param       {number}    accessTokenExpiration
          *
-         * @uses        PushUp.Framework.Data.Proxies.IProxy
-         * @uses        PushUp.Framework.Data.Proxies.ProxyResponse
-         * @uses        PushUp.Framework.Data.Proxies.ProxyStatus
+         * @uses        CakeTS.Data.Proxies.IProxy
+         * @uses        CakeTS.Data.Proxies.ProxyResponse
+         * @uses        CakeTS.Data.Proxies.ProxyStatus
          * @uses        Typertext.Json.JsonRequest
          * @uses        Typertext.Http.HttpUrl
          * @uses        Tyeprtext.Http.HttpProtocol

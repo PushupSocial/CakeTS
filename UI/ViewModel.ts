@@ -1,11 +1,11 @@
 /// <reference path="../Events/Event.ts" />
 /// <reference path="../Routing/History.ts" />
-/// <reference path="../../../lib/knockout.d.ts" />
-/// <reference path="../../../lib/jquery.d.ts" />
+/// <reference path="../lib/knockout.d.ts" />
+/// <reference path="../lib/jquery.d.ts" />
 
-module PushUp.Framework.UI {
-    import Events = PushUp.Framework.Events;
-    import HistoryItem = PushUp.Framework.Routing.HistoryItem;
+module CakeTS.UI {
+    import Events = CakeTS.Events;
+    import HistoryItem = CakeTS.Routing.HistoryItem;
 
     export class ViewModel {
         private _rootElement: JQuery;
@@ -49,7 +49,7 @@ module PushUp.Framework.UI {
         }
 
         public Destroy():void {
-
+            ko.cleanNode(this._rootElement[0]);
         }
     }
 }

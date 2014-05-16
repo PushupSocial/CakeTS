@@ -1,4 +1,4 @@
-module PushUp.Framework.Utils {
+module CakeTS.Utils {
     export class StringExtensions {
         private static IsUpperCase(text: string): boolean {
             return text.match(/^[A-Z]+$/) != null;

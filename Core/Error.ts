@@ -16,7 +16,7 @@
  * @version 0.1
  */
 
-module PushUp.Framework.Core {
+module CakeTS.Core {
     export class Error {
         public Name: string = "Error";
         // The error message

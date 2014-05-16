@@ -1,8 +1,8 @@
 ﻿/**
- * @namespace   PushUp.Framework.Events
+ * @namespace   CakeTS.Events
  * @module      Events
  */
-module PushUp.Framework.Events {
+module CakeTS.Events {
     /**
      * IEventHandler is the delegate signature for event
      * handlers. All event handlers being attached must
