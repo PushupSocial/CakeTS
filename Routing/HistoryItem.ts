@@ -34,8 +34,8 @@
          * @author  Kegan Myers <kegan@pushup.com>
          * @version 0.2.0
          */
-            constructor(pageName:string, params:{
-            [key: string]: string;
+        constructor(pageName:string, params:{
+            [key: string]: any;
         }) {
             this.pageName = pageName;
             this.pageParams = params;

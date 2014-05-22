@@ -45,7 +45,6 @@ module CakeTS.UI {
 
         public NavigatePage(page: string, args: { [index:string]: string }): void {
             this.Navigate.Fire(new HistoryItem(page, args));
-
         }
 
         public Destroy():void {
