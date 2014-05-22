@@ -1,0 +1,29 @@
+{
+  "name": "CakeTS",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/LordZardeck/CakeTS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordZardeck/CakeTS/issues"
+  },
+  "homepage": "https://github.com/LordZardeck/CakeTS",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-uglify": "^0.4.0",
+    "grunt-tslint": "^0.4.1",
+    "grunt-typescript": "^0.3.6",
+    "gruntfile-gtx": "^0.2.5",
+    "grunt-karma": "~0.8.2",
+    "tsd": "^0.5.7"
+  }
+}

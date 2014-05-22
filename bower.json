@@ -1,0 +1,24 @@
+{
+  "name": "CakeTS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/LordZardeck/CakeTS",
+  "authors": [
+    "Sean Templeton <sean@pushup.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "idea",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "knockout": "~3.1.0",
+    "Typertext": "~0.8.1"
+  }
+}
