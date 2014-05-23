@@ -58,6 +58,12 @@ module CakeTS.Utils {
             return "_" + pascalCasedWord;
         }
 
+        /**
+         * Expects a name in pascal case
+         * @param name
+         * @returns {*[]}
+         * @constructor
+         */
         public static GetNameVariants(name: string): string[] {
             return [
                 name,
