@@ -6,7 +6,8 @@ module.exports = function (grunt) {
     gtx.loadNpm([
         'grunt-contrib-uglify',
         'grunt-typescript',
-        'grunt-tslint'
+        'grunt-tslint',
+        'grunt-karma'
     ]);
 
     // Load up our configuration
@@ -44,12 +45,47 @@ module.exports = function (grunt) {
             files: {
                 src: 'src/**/*.ts'
             }
+        },
+        karma: {
+            build: {
+                options: {
+                    files: [
+                        'bower_components/jquery/dist/jquery.js',
+                        'bower_components/knockout/dist/knockout.js',
+                        'bower_components/Typertext/build/typertext.js',
+                        'build/CakeTS.js',
+                        'tests/**/*.js'
+                    ]
+                },
+                runnerPort: 9999,
+                singleRun: true,
+                browsers: ['PhantomJS'],
+                logLevel: 'ERROR',
+                frameworks: ['jasmine']
+            },
+            debug: {
+                options: {
+                    files: [
+                        'bower_components/jquery/dist/jquery.js',
+                        'bower_components/knockout/dist/knockout.js',
+                        'bower_components/Typertext/build/typertext.js',
+                        'build/CakeTS.js',
+                        'tests/**/*.js'
+                    ]
+                },
+                runnerPort: 9999,
+                singleRun: false,
+                browsers: ['Chrome'],
+                logLevel: 'ERROR',
+                frameworks: ['jasmine']
+            }
         }
     });
 
     // Define our usable tasks
     gtx.alias('default', ['build']);
     gtx.alias('build', ['typescript', 'uglify']);
+    gtx.alias('dist', ['tslint', 'build']);
 
     // Initialize grunt
     gtx.finalise();

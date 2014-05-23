@@ -1,16 +1,25 @@
 module CakeTS.Utils {
     export class Storage {
-        private static localStorageEnabled: boolean = ((): boolean => {
+        private static localStorageEnabled: boolean = Storage.CheckLocalStorage(window.localStorage);
+
+        /**
+         * This is here for testing. Used to be inline but needed the ability
+         * to override the location of the storage for testing.
+         *
+         * @param   {Storage}   storage
+         * @returns {boolean}
+         */
+        public static CheckLocalStorage(storage: any): boolean {
             try {
                 var test: string = "test";
-                window.localStorage.setItem(test, test);
-                window.localStorage.getItem(test);
-                window.localStorage.removeItem(test);
+                storage.setItem(test, test);
+                storage.getItem(test);
+                storage.removeItem(test);
                 return true;
             } catch (e) {
                 return false;
             }
-        })();
+        }
 
         private static fallback: {[index: string]: any
         } = {};
@@ -55,19 +64,22 @@ module CakeTS.Utils {
             if (Storage.localStorageEnabled) {
                 for (var i: number = 0; i < window.localStorage.length; i++) {
                     var key: string = window.localStorage.key(i);
+                    // Call the worker
                     result = worker(window.localStorage.getItem(key));
                     if (!result) {
                         window.localStorage.removeItem(key);
+                        i--;
                     } else {
                         window.localStorage.setItem(key, result);
                     }
                 }
-            }
-            result = worker(Storage.fallback);
-            if (!result) {
-                Storage.fallback = {};
             } else {
-                Storage.fallback = result;
+                result = worker(Storage.fallback);
+                if (!result) {
+                    Storage.fallback = {};
+                } else {
+                    Storage.fallback = result;
+                }
             }
         }
 
