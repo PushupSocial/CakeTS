@@ -1,6 +1,6 @@
 module CakeTS.Utils {
     export class UrlHandling {
-        public static parseUrl(url: string): { protocol: string; domain: string; port: number } {
+        public static ParseUrl(url: string): { protocol: string; domain: string; port: number } {
             var a: HTMLAnchorElement = document.createElement("a");
             a.href = url;
             return {
