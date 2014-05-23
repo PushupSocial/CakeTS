@@ -5,7 +5,7 @@
  * @module      Events
  */
 module CakeTS.Events {
-    export class Event<T> {
+    export class TSEvent<T> {
         /**
          * Private array of events to fire
          *

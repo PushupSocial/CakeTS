@@ -83,7 +83,7 @@ module CakeTS.Routing {
             }
 
             for (key in item2) {
-                if (item2.hasOwnProperty(key) && !item1.hasOwnProperty(key)) {
+                if ((<any>item2).hasOwnProperty(key) && !(<any>item1).hasOwnProperty(key)) {
                     return false;
                 }
             }

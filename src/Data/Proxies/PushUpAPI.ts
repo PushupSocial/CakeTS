@@ -4,7 +4,7 @@
 /// <reference path="ProxyStatus.ts" />
 /// <reference path="ProxyEndpoint.ts" />
 /// <reference path="../../../bower_components/Typertext/build/typertext.d.ts" />
-/// <reference path="../../Events/Event.ts" />
+/// <reference path="../../Events/TSEvent.ts" />
 /// <reference path="../../Core/Errors/UnauthenticatedAccessError.ts" />
 /// <reference path="../../Core/Errors/AuthenticationError.ts" />
 
@@ -23,7 +23,7 @@ module CakeTS.Data.Proxies {
     import JsonRequest = Typertext.Json.JsonRequest;
     import HttpUrl = Typertext.Http.HttpUrl;
 
-    import Events = CakeTS.Events;
+    import TSEvent = CakeTS.Events.TSEvent;
 
     import UnauthenticatedAccessError = CakeTS.Core.Errors.UnauthenticatedAccessError;
 
@@ -34,7 +34,7 @@ module CakeTS.Data.Proxies {
          * @property    PageChange
          * @type        {Event<HistoryItem>}
          */
-        public AuthenticationUpdate: Events.Event<PushUpAPI>;
+        public AuthenticationUpdate: TSEvent<PushUpAPI>;
 
         /**
          *
@@ -90,7 +90,7 @@ module CakeTS.Data.Proxies {
             this._AccessTokenExpiration = accessTokenExpiration;
 
             //Create the event object
-            this.AuthenticationUpdate = new Events.Event<PushUpAPI>(this);
+            this.AuthenticationUpdate = new TSEvent<PushUpAPI>(this);
         }
 
         public RawResponse(response: Typertext.Json.JsonResponse): ProxyResponse {

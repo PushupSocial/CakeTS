@@ -1,8 +1,6 @@
-﻿module CakeTS.Routing {
+﻿module CakeTS.Routing.IFrame {
 
-    export class MessageException {
-
-    }
+    export class MessageException { }
 
     export class Message {
         public type: string;

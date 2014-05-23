@@ -1,15 +1,15 @@
 /// <reference path="Message.ts" />
 /// <reference path="IMessageHandler.ts" />
-/// <reference path="../Events/Event.ts" />
-/// <reference path="../Utils/Logger.ts" />
-/// <reference path="../Utils/LogCategory.ts" />
+/// <reference path="../../Events/TSEvent.ts" />
+/// <reference path="../../Utils/Logger.ts" />
+/// <reference path="../../Utils/LogCategory.ts" />
 
-module CakeTS.Routing {
-    import Events = CakeTS.Events;
+module CakeTS.Routing.IFrame {
+    import TSEvent = CakeTS.Events.TSEvent;
     import Logger = CakeTS.Utils.Logger;
     import LogCategory = CakeTS.Utils.LogCategory;
 
-    export class Messenger {
+    export class IFrameMessenger {
         private handlers: {
             [key: string]: MessageEvent;
         } = {};
@@ -38,7 +38,7 @@ module CakeTS.Routing {
             //--/Raw javascript
 
             this.uniqueId = "Messenger" + Math.floor(Math.random() * 100000000);
-            var handler: IMessageHandler = (messenger: Messenger, message: Message): void => {
+            var handler: IMessageHandler = (messenger: IFrameMessenger, message: Message): void => {
                 Logger.Info("Testing parent cap", LogCategory.Loader);
                 if (message.GetData()["uniqueId"] === this.uniqueId) {
                     var capabilities: string[] = message.GetData()["capabilities"];
@@ -93,13 +93,14 @@ module CakeTS.Routing {
          */
         public Register(type: string, callback: IMessageHandler, scope: any = null): void {
             if (!this.handlers.hasOwnProperty(type)) {
-                this.handlers[type] = new Events.Event(this);
+                this.handlers[type] = new TSEvent(this);
             }
             if (scope == null) {
                 scope = {};
             }
-            //This is perfectly valid, the IDE does not like it though
-            this.handlers[type].Attach(callback);
+            // This is perfectly valid, the IDE does not like it though. Using
+            // <any> type to hide error
+            this.handlers[type].Attach(<any>callback);
         }
 
         /**

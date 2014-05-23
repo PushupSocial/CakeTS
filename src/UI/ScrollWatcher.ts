@@ -1,14 +1,14 @@
-/// <reference path="../Events/Event.ts" />
+/// <reference path="../Events/TSEvent.ts" />
 
 module CakeTS.UI {
-    import Events = CakeTS.Events;
+    import TSEvent = CakeTS.Events.TSEvent;
 
     export class ScrollWatcher  {
         private element: HTMLElement;
         private padding: number;
         private isEnabled: boolean;
 
-        public ScrollLimitReached: Events.Event<void>;
+        public ScrollLimitReached: TSEvent<void>;
 
         constructor(elementToWatch: HTMLElement, padding?: number) {
             if (typeof padding === "undefined") {
@@ -18,7 +18,7 @@ module CakeTS.UI {
             this.element = elementToWatch;
             this.padding = padding;
 
-            this.ScrollLimitReached = new Events.Event<void>(this);
+            this.ScrollLimitReached = new TSEvent<void>(this);
 
             this.element.onscroll = (event: UIEvent): void => {
                 this.OnElementScroll(event);
