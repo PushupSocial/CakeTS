@@ -4,7 +4,7 @@
  * @namespace   CakeTS.Events
  * @module      Events
  */
-module CakeTS.Events {
+module CakeTS.Core.Events {
     export class TSEvent<T> {
         /**
          * Private array of events to fire

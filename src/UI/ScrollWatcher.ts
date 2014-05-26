@@ -1,7 +1,7 @@
-/// <reference path="../Events/TSEvent.ts" />
+/// <reference path="../Core/Events/TSEvent.ts" />
 
 module CakeTS.UI {
-    import TSEvent = CakeTS.Events.TSEvent;
+    import TSEvent = CakeTS.Core.Events.TSEvent;
 
     export class ScrollWatcher  {
         private element: HTMLElement;

@@ -1,13 +1,13 @@
 /// <reference path="TSEvent.ts" />
 /// <reference path="IDOMSender.ts" />
 /// <reference path="IDOMEventArgs.ts" />
-/// <reference path="../../typings/jquery/jquery.d.ts" />
+/// <reference path="../../../typings/jquery/jquery.d.ts" />
 
 /**
  * @namespace   CakeTS.Events
  * @module      Events
  */
-module CakeTS.Events {
+module CakeTS.Core.Events {
     export class DOMEvent extends TSEvent<IDOMEventArgs> {
         /**
          * DOM Event handler provides an interface to easily providing and listening

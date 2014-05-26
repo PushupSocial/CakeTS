@@ -1,11 +1,11 @@
 /// <reference path="Message.ts" />
 /// <reference path="IMessageHandler.ts" />
-/// <reference path="../../Events/TSEvent.ts" />
+/// <reference path="../../Core/Events/TSEvent.ts" />
 /// <reference path="../../Utils/Logger.ts" />
 /// <reference path="../../Utils/LogCategory.ts" />
 
 module CakeTS.Routing.IFrame {
-    import TSEvent = CakeTS.Events.TSEvent;
+    import TSEvent = CakeTS.Core.Events.TSEvent;
     import Logger = CakeTS.Utils.Logger;
     import LogCategory = CakeTS.Utils.LogCategory;
 

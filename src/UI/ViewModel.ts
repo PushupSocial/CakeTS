@@ -1,9 +1,9 @@
-/// <reference path="../Events/TSEvent.ts" />
+/// <reference path="../Core/Events/TSEvent.ts" />
 /// <reference path="../../typings/knockout/knockout.d.ts" />
 /// <reference path="../../typings/jquery/jquery.d.ts" />
 
 module CakeTS.UI {
-    import TSEvent = CakeTS.Events.TSEvent;
+    import TSEvent = CakeTS.Core.Events.TSEvent;
     import HistoryItem = CakeTS.Routing.HistoryItem;
 
     export class ViewModel {

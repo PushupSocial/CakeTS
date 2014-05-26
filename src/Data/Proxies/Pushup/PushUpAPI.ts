@@ -1,12 +1,12 @@
-/// <reference path="IProxy.ts" />
-/// <reference path="ProxyResponse.ts" />
-/// <reference path="IProxyResponseHandler.ts" />
-/// <reference path="ProxyStatus.ts" />
-/// <reference path="ProxyEndpoint.ts" />
-/// <reference path="../../../bower_components/Typertext/build/typertext.d.ts" />
-/// <reference path="../../Events/TSEvent.ts" />
-/// <reference path="../../Core/Errors/UnauthenticatedAccessError.ts" />
-/// <reference path="../../Core/Errors/AuthenticationError.ts" />
+/// <reference path="../IProxy.ts" />
+/// <reference path="../ProxyResponse.ts" />
+/// <reference path="../IProxyResponseHandler.ts" />
+/// <reference path="../ProxyStatus.ts" />
+/// <reference path="../ProxyEndpoint.ts" />
+/// <reference path="../../../../bower_components/Typertext/build/typertext.d.ts" />
+/// <reference path="../../../Core/Events/TSEvent.ts" />
+/// <reference path="../../../Core/Errors/UnauthenticatedAccessError.ts" />
+/// <reference path="../../../Core/Errors/AuthenticationError.ts" />
 
 /**
  * @namespace   CakeTS.Data.Proxies
@@ -15,7 +15,7 @@
  */
 
 /* tslint:disable:forin */
-module CakeTS.Data.Proxies {
+module CakeTS.Data.Proxies.Pushup {
     import IProxy = CakeTS.Data.Proxies.IProxy;
     import ProxyResponse = CakeTS.Data.Proxies.ProxyResponse;
     import ProxyStatus = CakeTS.Data.Proxies.ProxyStatus;
@@ -23,7 +23,7 @@ module CakeTS.Data.Proxies {
     import JsonRequest = Typertext.Json.JsonRequest;
     import HttpUrl = Typertext.Http.HttpUrl;
 
-    import TSEvent = CakeTS.Events.TSEvent;
+    import TSEvent = CakeTS.Core.Events.TSEvent;
 
     import UnauthenticatedAccessError = CakeTS.Core.Errors.UnauthenticatedAccessError;
 
@@ -84,7 +84,7 @@ module CakeTS.Data.Proxies {
          * @author      Kegan Myers <kegan@pushup.com>
          * @version     0.2.1
          */
-            constructor(endpoint: HttpUrl, accessToken?: string, accessTokenExpiration?: number) {
+        constructor(endpoint: HttpUrl, accessToken?: string, accessTokenExpiration?: number) {
             this._Endpoint = endpoint;
             this._AccessToken = accessToken;
             this._AccessTokenExpiration = accessTokenExpiration;

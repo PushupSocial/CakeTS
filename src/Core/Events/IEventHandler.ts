@@ -2,7 +2,7 @@
  * @namespace   CakeTS.Events
  * @module      Events
  */
-module CakeTS.Events {
+module CakeTS.Core.Events {
     /**
      * IEventHandler is the delegate signature for event
      * handlers. All event handlers being attached must

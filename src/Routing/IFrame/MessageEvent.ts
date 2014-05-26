@@ -3,7 +3,7 @@
  */
 
 module CakeTS.Routing.IFrame {
-    import TSEvent = CakeTS.Events.TSEvent;
+    import TSEvent = CakeTS.Core.Events.TSEvent;
 
     export class MessageEvent extends TSEvent<Message> {
 

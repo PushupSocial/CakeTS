@@ -1,14 +1,14 @@
 /// <reference path="../../typings/jquery/jquery.d.ts" />
-/// <reference path="../Events/DOMEvent.ts" />
+/// <reference path="../Core/Events/DOMEvent.ts" />
 /// <reference path="../Routing/IRouter.ts" />
 /// <reference path="../Routing/HistoryItem.ts" />
 
 module CakeTS.UI {
-    import IDOMSender = CakeTS.Events.IDOMSender;
+    import IDOMSender = CakeTS.Core.Events.IDOMSender;
     import IRouter = CakeTS.Routing.IRouter;
     import HistoryItem = CakeTS.Routing.HistoryItem;
 
-    export class Component implements IDOMSender {
+    export class Manager implements IDOMSender {
         private _element: JQuery;
         private _router: IRouter;
 
