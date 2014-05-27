@@ -1,6 +1,3 @@
-/// <reference path="../typings/jquery/jquery.d.ts" />
-/// <reference path="../typings/knockout/knockout.d.ts" />
-/// <reference path="../bower_components/Typertext/build/typertext.d.ts" />
 declare module CakeTS.Core {
     class Error {
         public Name: string;
