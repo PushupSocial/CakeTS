@@ -1,6 +1,4 @@
 /// <reference path="../Core/Events/TSEvent.ts" />
-/// <reference path="../../typings/knockout/knockout.d.ts" />
-/// <reference path="../../typings/jquery/jquery.d.ts" />
 
 module CakeTS.UI {
     import TSEvent = CakeTS.Core.Events.TSEvent;

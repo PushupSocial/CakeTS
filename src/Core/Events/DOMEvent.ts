@@ -1,7 +1,6 @@
 /// <reference path="TSEvent.ts" />
 /// <reference path="IDOMSender.ts" />
 /// <reference path="IDOMEventArgs.ts" />
-/// <reference path="../../../typings/jquery/jquery.d.ts" />
 
 /**
  * @namespace   CakeTS.Events

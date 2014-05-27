@@ -1,4 +1,3 @@
-/// <reference path="../../typings/jquery/jquery.d.ts" />
 /// <reference path="../Core/Events/DOMEvent.ts" />
 /// <reference path="../Routing/IRouter.ts" />
 /// <reference path="../Routing/HistoryItem.ts" />

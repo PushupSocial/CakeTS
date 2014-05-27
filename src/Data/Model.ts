@@ -1,4 +1,3 @@
-/// <reference path="../../typings/knockout/knockout.d.ts" />
 /// <reference path="../Utils/StringExtensions.ts" />
 
 /* tslint:disable:forin */

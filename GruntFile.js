@@ -15,7 +15,12 @@ module.exports = function (grunt) {
     gtx.config({
         typescript: {
             base: {
-                src: ["src/**/*.ts"],
+                src: [
+                    "typings/jquery/jquery.d.ts",
+                    "typings/knockout/knockout.d.ts",
+                    "bower_components/Typertext/build/typertext.d.ts",
+                    "src/**/*.ts"
+                ],
                 dest: "build/CakeTS.js",
                 options: {
                     "target": "es5",
