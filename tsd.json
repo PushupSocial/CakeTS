@@ -1,0 +1,15 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/cakets-deps.d.ts",
+  "installed": {
+    "knockout/knockout.d.ts": {
+      "commit": "c1c3cc4469db392dc0ba03319e15d02298342711"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "c1c3cc4469db392dc0ba03319e15d02298342711"
+    }
+  }
+}
