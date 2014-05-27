@@ -97,7 +97,7 @@ module.exports = function (grunt) {
     // Define our usable tasks
     gtx.alias('default', ['build']);
     gtx.alias('build', ['typescript', 'uglify']);
-    gtx.alias('dist', ['tslint', 'build']);
+    gtx.alias('dist', ['tslint', 'build', 'copy:dist']);
 
     // Initialize grunt
     gtx.finalise();
