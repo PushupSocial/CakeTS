@@ -7,7 +7,8 @@ module.exports = function (grunt) {
         'grunt-contrib-uglify',
         'grunt-typescript',
         'grunt-tslint',
-        'grunt-karma'
+        'grunt-karma',
+        'grunt-contrib-copy'
     ]);
 
     // Load up our configuration
@@ -44,6 +45,16 @@ module.exports = function (grunt) {
             },
             files: {
                 src: 'src/**/*.ts'
+            }
+        },
+        copy: {
+            dist: {
+                files: [
+                    {src: 'build/*', dest: 'dist', expand: true, flatten: true}
+                ],
+                options: {
+                    noProcess: true
+                }
             }
         },
         karma: {
