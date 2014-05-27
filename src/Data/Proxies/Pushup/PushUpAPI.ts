@@ -3,7 +3,6 @@
 /// <reference path="../IProxyResponseHandler.ts" />
 /// <reference path="../ProxyStatus.ts" />
 /// <reference path="../ProxyEndpoint.ts" />
-/// <reference path="../../../../bower_components/Typertext/build/typertext.d.ts" />
 /// <reference path="../../../Core/Events/TSEvent.ts" />
 /// <reference path="../../../Core/Errors/UnauthenticatedAccessError.ts" />
 /// <reference path="../../../Core/Errors/AuthenticationError.ts" />
