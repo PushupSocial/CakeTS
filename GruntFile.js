@@ -19,7 +19,8 @@ module.exports = function (grunt) {
                 dest: "build/CakeTS.js",
                 options: {
                     "target": "es5",
-                    "sourceMap": true
+                    "sourceMap": true,
+                    "declaration": true
                 }
             }
         },
